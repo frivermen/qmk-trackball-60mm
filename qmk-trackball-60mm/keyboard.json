@@ -1,0 +1,39 @@
+{
+    "keyboard_name": "frivermen trackball",
+    "url": "github.com/frivermen/trackball",
+    "maintainer": "frivermen",
+    "manufacturer": "frivermen",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "usb": {
+        "vid": "0x4652",
+        "pid": "0x0001",
+        "device_version": "1.0.0",
+        "max_power": 100
+    },
+    "features": {
+        "bootmagic": true,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "pointing_device": true
+    },
+    "matrix_pins": {
+        "direct": [
+            ["GP15", "GP16", "GP14", "GP17"]
+        ]
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "label": "Btn1 (Left)", "x": 0, "y": 0},
+                {"matrix": [0, 1], "label": "Btn2 (Middle)", "x": 1, "y": 0},
+                {"matrix": [0, 2], "label": "Btn3 (Right)", "x": 2, "y": 0},
+                {"matrix": [0, 3], "label": "Btn4 (Scroll)", "x": 3, "y": 0}
+            ]
+        }
+    },
+    "dynamic_keymap": {
+        "layer_count": 8
+    }
+}
